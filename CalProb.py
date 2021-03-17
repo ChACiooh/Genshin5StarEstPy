@@ -29,7 +29,7 @@ def calCondP(p_, q_, stack_):
     if stack_ >= AMPLIFY and stack_ < GACHA_SIZE:
         condp = condp / q_ * (1-q_)
     elif stack_ < AMPLIFY:
-        condp = condp / p_ * (1-q_)
+        condp = condp / p_ * (1-p_)
     return condp
 
 def DoubleMax(a, b):
